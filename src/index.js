@@ -12,7 +12,7 @@ import { HashRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HashRouter>
-  <Auth0Provider
+  <Auth0Provider 
     domain="dev-ie3ypbqs6izl0f3m.us.auth0.com"
     clientId="JmoCYNBsshzzrCjXgAnCzDqkux6w0J9t"
     authorizationParams={{

@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 import { Button } from "../styles/button";
 
 const HeroSection = ({myData}) => {
-  const {name,Data} =myData
+  const {name} =myData
   return (
     <Wrapper>
       <div className="container">
@@ -21,7 +21,7 @@ const HeroSection = ({myData}) => {
           </div>
           <div className="hero-section-image">
             <figure>
-              <img src="Images/Image1.jpeg" alt="hero-Image" className="img-style"/>
+              <img src="../ReactEcommerceProject/Images/Image1.jpeg" alt="hero-Image" className="img-style"/>
             </figure>
           </div>
         </div>
