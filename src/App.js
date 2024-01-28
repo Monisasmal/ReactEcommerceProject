@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Home from './Home';
 import About from './About';
 import Products from './Products';
@@ -37,7 +37,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-  <Router>
+  {/* <Router> */}
   <GlobalStyle />
   <Header/>
     <Routes>
@@ -50,7 +50,7 @@ const App = () => {
       <Route path='*' element={< Error />}></Route>
     </Routes>
     <Footer />
-  </Router>
+  {/* </Router> */}
   </ThemeProvider>
   )
 }
