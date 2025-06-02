@@ -8,23 +8,23 @@ const Trusted = () => {
         <h3>Trusted By 100+ Companies</h3>
         <div className="brand-section-slider">
           <div className="slide">
-            <img src="../ReactEcommerceProject/Images/company1.png" alt="companyLogo" />
+            <img src="/Images/company1.png" alt="companyLogo" />
           </div>
 
           <div className="slide">
-            <img src="../ReactEcommerceProject/Images/company2.png" alt="companyLogo" />
+            <img src="/Images/company2.png" alt="companyLogo" />
           </div>
 
           <div className="slide">
-            <img src="../ReactEcommerceProject/Images/company3.png" alt="companyLogo" />
+            <img src="/Images/company3.png" alt="companyLogo" />
           </div>
 
           <div className="slide">
-            <img src="../ReactEcommerceProject/Images/company6.png" alt="companyLogo" />
+            <img src="/Images/company6.png" alt="companyLogo" />
           </div>
 
           <div className="slide">
-            <img src="../ReactEcommerceProject/Images/company5.png" alt="companyLogo" />
+            <img src="/Images/company5.png" alt="companyLogo" />
           </div>
         </div>
       </div>

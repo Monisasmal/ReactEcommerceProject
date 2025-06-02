@@ -21,7 +21,7 @@ const HeroSection = ({myData}) => {
           </div>
           <div className="hero-section-image">
             <figure>
-              <img src="../ReactEcommerceProject/Images/Image1.jpeg" alt="hero-Image" className="img-style"/>
+              <img src="/Images/Image1.jpeg" alt="hero-Image" className="img-style"/>
             </figure>
           </div>
         </div>
