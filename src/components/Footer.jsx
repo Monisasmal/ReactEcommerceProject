@@ -6,72 +6,70 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
-const Footer = () => {
-  return (
-    <Wrapper>
-        <section className='contact-short'>
-            <div className='grid grid-two-column'>
-                <div>
-                    <h3>Ready to Get  Started?</h3>
-                    <h3>Talk to us Today</h3>
-                </div>
-                <div>
-                    <Button className="btn hireme-btn">
-                        <NavLink to="/contact">Get Started</NavLink>
-                    </Button>
-                </div>
-            </div>
-        </section>
+const Footer = () => (
+  <Wrapper>
+    <section className='contact-short'>
+      <div className='grid grid-two-column'>
+        <div>
+          <h3>Ready to Get  Started?</h3>
+          <h3>Talk to us Today</h3>
+        </div>
+        <div>
+          <Button className="btn hireme-btn">
+            <NavLink to="/contact">Get Started</NavLink>
+          </Button>
+        </div>
+      </div>
+    </section>
 
-        {/* Main Footer */}
-        <footer>
-            <div className='container grid grid-four-column'>
-                <div className='footer-about'>
-                    <h3>Manaswini Store</h3>
-                    <p> Lorem, ipsum dolor sit adipisicing elit.</p>
-                </div>
-                <div className='footer-subscribe'>
-                    <h3>Subscribe to get important updates</h3>
-                    <form action='#'>
-                        <input className="input" type='email' name='email' placeholder='Your E-Mail'/>
-                        <input  className="input" type='submit' value='subscribe'/>
-                    </form>
-                </div>
-                <div className='footer-social'>
-                    <h3>Follow Us</h3>
-                    <div className='footer-social-icons'>
-                        <div>
-                        <FaFacebook className="icons" />
-                        </div>
-                        <div>
-                        <FaInstagram className="icons"/>
-                        </div>
-                        <div>
-                        <FaTwitter className="icons"/>
-                        </div>
-                    </div>
-                </div>
-                <div className='footer-contact'>
-                    <h3>Call Us</h3>
-                    <h3>+91 7788889480</h3>
-                </div>
+    {/* Main Footer */}
+    <footer>
+      <div className='container grid grid-four-column'>
+        <div className='footer-about'>
+          <h3>Manaswini Store</h3>
+          <p>😊Be Happy with US😊</p>
+        </div>
+        <div className='footer-subscribe'>
+          <h3>Subscribe to get important updates</h3>
+          <form action='#'>
+            <input className="input" type='email' name='email' placeholder='Your E-Mail' />
+            <input className="input" type='submit' value='subscribe' />
+          </form>
+        </div>
+        <div className='footer-social'>
+          <h3>Follow Us</h3>
+          <div className='footer-social-icons'>
+            <div>
+              <FaFacebook className="icons" />
             </div>
-            <div className='footer-bottom-section'>
-                <hr />
-                <div className='container grid grid-two-column'>
-                    <p>
-                        @{new Date().getFullYear()} ManaswiniStore. All Rights Reserved
-                    </p>
-                    <div >
-                <p>PRIVACY POLICY</p>
-                <p>TERMS & CONDITIONS</p>
-              </div>
-                </div>
+            <div>
+              <FaInstagram className="icons" />
             </div>
-        </footer>
-    </Wrapper>
-  )
-}
+            <div>
+              <FaTwitter className="icons" />
+            </div>
+          </div>
+        </div>
+        <div className='footer-contact'>
+          <h3>Call Us</h3>
+          <h3>+91 6370094643</h3>
+        </div>
+      </div>
+      <div className='footer-bottom-section'>
+        <hr />
+        <div className='container grid grid-two-column'>
+          <p>
+            @{new Date().getFullYear()} ManaswiniStore. All Rights Reserved
+          </p>
+          <div>
+            <p>PRIVACY POLICY</p>
+            <p>TERMS & CONDITIONS</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </Wrapper>
+)
 
 const Wrapper = styled.section`
  

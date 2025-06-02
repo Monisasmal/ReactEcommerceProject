@@ -15,8 +15,8 @@ const HeroSection = ({myData}) => {
             <p className="para">
             Welcome to our one-stop destination for cutting-edge technology! Explore our eCommerce store and discover a curated collection of the latest mobile phones and laptops. Immerse yourself in the world of innovation, where sleek designs meet powerful performance
              </p>
-            <NavLink>
-              <Button>Shop Now</Button>
+            <NavLink to = "/Products">
+              <Button >Shop Now</Button>
             </NavLink>
           </div>
           <div className="hero-section-image">
@@ -88,8 +88,16 @@ figure {
     .grid {
       gap: 10rem;
     }
+      .grid-two-column {
+    grid-template-columns: repeat(1, 1fr);
+}
     .hero-section-data{
       margin-left:0rem;
+      font-size: 24px;
+    }
+
+    .hero-section-image{
+     display:none;
     }
 
     figure::after {

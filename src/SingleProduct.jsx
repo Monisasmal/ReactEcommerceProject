@@ -27,7 +27,7 @@ const SingleProduct = () => {
     image,
     price,
     description,
-    category,
+    // category,
     stock,
     stars,
     reviews,
@@ -93,7 +93,7 @@ const SingleProduct = () => {
               </p>
               <p>
                 Brand:
-                <span>{company}</span>
+                <span>{company}</span> 
               </p>
             </div>
             <hr/>

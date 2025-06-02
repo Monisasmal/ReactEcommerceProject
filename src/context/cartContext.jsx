@@ -4,13 +4,22 @@ import reducer from "../reducer/cartReducer";
 const CartContext = createContext();
 
 const getLocalCartData = () => {
-    let localCartData = localStorage.getItem("EcommCart");
-    if (localCartData === []) {
-      return [];
-    } else {
-      return JSON.parse(localCartData);
-    }
-  };
+  let localCartData = localStorage.getItem("EcommCart");
+
+  if (!localCartData) {
+    return []; // If it's null, return an empty array
+  }
+
+  try {
+    return JSON.parse(localCartData);
+  } catch (error) {
+    console.error("Error parsing localStorage cart:", error);
+    return [];
+  }
+};
+
+  
+
 
 const initialState = {
     // cart: [],
@@ -32,7 +41,7 @@ const CartProvider = ({ children }) => {
     dispatch({type: "SET_DECREMENT", payload:id})
   }
 
-
+ 
   const setIncrement = (id) =>{
     dispatch({type: "SET_iNCREMENT", payload:id})
   }
