@@ -1,12 +1,12 @@
-**🚀 React E-Commerce Store**
+## 🚀 React E-Commerce Store
 
 A clean, responsive online store built with React. Browse products, manage your cart, and complete checkout—all in one place.
 
-**🔗 Live Demo**
+## 🔗 Live Demo
 
 https://react-ecommerce-project-manaswini-sasmals-projects.vercel.app/
 
-**✨ Key Features**
+## ✨ Key Features
 
  **Product Gallery**  
   Browse items with images, names, prices and quick “Add to Cart” buttons.
@@ -23,7 +23,7 @@ https://react-ecommerce-project-manaswini-sasmals-projects.vercel.app/
 - **Responsive Design**  
   Works smoothly on desktop, tablet, and mobile.
 
-**🛠️ Tech Stack**
+## 🛠️ Tech Stack
 
 - **React** (with Hooks & Context API)  
 - **React Router** for page navigation  
@@ -43,7 +43,7 @@ npm start
 
 npm run build
 
-**🖼️ Screenshots**
+## 🖼️ Screenshots
 Home Page
 ![image](https://github.com/user-attachments/assets/4ce9667f-ac0c-44a5-81e8-50cdf7a8e302)
 Product Page
@@ -53,9 +53,17 @@ Contact Page
 Cart Page
 ![image](https://github.com/user-attachments/assets/41e9c2b5-1d89-493e-95ff-152e6cc71088)
 
-Thanks for visiting! Happy coding 💻
-Made with ❤️ by Manaswini Sasmal
+🙋‍♀️ Author
 
+## Manaswini Sasmal
+
+👩‍💻 Frontend Developer | React Enthusiast
+
+🔗 Portfolio - https://manaswini-portfolio.vercel.app/
+
+📧 manaswinisasmal5597@gmail.com
+
+🔗 LinkedIn - https://www.linkedin.com/in/manaswini-sasmal-b77a21162/
 
 
 
