@@ -3,7 +3,7 @@ import axios from "axios";
 import reducer from "../reducer/productReducer"
 
 const AppContext = createContext();
-const API = "https://api.pujakaitem.com/api/products";
+const API = "https://ecomm-backend-htia.onrender.com/api/products";
 const intialState ={
   isLoading: false,
   isError: false,
@@ -32,18 +32,18 @@ const AppProvider = ({children}) =>{
 
     // API call for single Product
 
-    const getSingleProduct = async(url)=>{
-      dispatch({type:"SET_SINGLE_LOADING"})
-      try{
-      const res = await axios.get(url);
-      const singleProduct = await res.data;
-      dispatch({type:"SET_SINGLE_PRODUCT", payload:singleProduct})
-      }catch(error){
-        dispatch({type:"SET_SINGLE_ERROR"})
-      }
+    const getSingleProduct = async (url) => {
+    dispatch({ type: "SET_SINGLE_LOADING" });
+    try {
+        const res = await axios.get(url);
+        const singleProduct = res.data;
+        dispatch({ type: "SET_SINGLE_PRODUCT", payload: singleProduct });
+    } catch (error) {
+        dispatch({ type: "SET_SINGLE_ERROR" });
     }
+};
 
-    useEffect(()=>{
+    useEffect(()=>{ 
         getProducts(API);
     },[])
 

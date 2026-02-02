@@ -13,7 +13,7 @@ import { MdSecurity } from "react-icons/md";
 import Star from "./components/Star";
 import AddToCart from "./components/AddToCart";
 
-const API = "https://api.pujakaitem.com/api/products";
+const API = "https://ecomm-backend-htia.onrender.com/api/singleproduct";
 
 const SingleProduct = () => {
   const { getSingleProduct, isSingleLoading, singleProduct } =
@@ -85,7 +85,7 @@ const SingleProduct = () => {
             <div className="product-data-info">
               <p>
                 Available:
-                <span>{stock > 0 ? "in Stock" : "Not Available"}</span>
+                <span>{stock > 0 ? "In Stock" : "Not Available"}</span>
               </p>
               <p>
                 ID:

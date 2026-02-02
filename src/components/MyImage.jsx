@@ -1,19 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
-const MyImage = ({ imgs = [{ url: "" }] }) => {
-  const [mainImage, setMainImage] = useState(imgs[0]);
+const MyImage = ({ imgs = "" }) => {
+  // 1. Safety Check: If imgs is a string (from MongoDB), turn it into an array format
+  // If it's already an array, keep it.
+  const imageArray = typeof imgs === "string" ? [{ url: imgs, filename: "product" }] : imgs;
+
+  // 2. State for main image
+  const [mainImage, setMainImage] = useState(imageArray[0]);
+
+  // 3. Update mainImage if imageArray changes (fixes blank image on first load)
+  useEffect(() => {
+    setMainImage(imageArray[0]);
+  }, [imgs]);
+
   return (
     <Wrapper>
       <div className="grid grid-four-column">
-        {imgs.map((curElem, Index) => {
+        {imageArray.map((curElem, index) => {
           return (
-            <figure>
+            <figure key={index}>
               <img
                 src={curElem.url}
                 alt={curElem.filename}
                 className="box-image--style"
-                key={Index}
                 onClick={() => setMainImage(curElem)}
               />
             </figure>
@@ -21,14 +31,13 @@ const MyImage = ({ imgs = [{ url: "" }] }) => {
         })}
       </div>
 
-      {/* For Single Image */}
+      {/* Main Image Display */}
       <div className="main-screen">
-      <img src={mainImage.url} alt={mainImage.filename} />
+        <img src={mainImage?.url} alt={mainImage?.filename} />
       </div>
     </Wrapper>
   );
 };
-
 const Wrapper = styled.section`
   display: grid;
   grid-template-columns: 0.4fr 1fr;

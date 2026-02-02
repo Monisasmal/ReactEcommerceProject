@@ -10,7 +10,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 const Cart = () => {
   const { isAuthenticated, user } = useAuth0();
 
-  const {cart,clearCart,total_amount,shipping_fee} = useCartContext();
+  const { cart, clearCart, total_price, shipping_fee } = useCartContext();
 
   if(cart.length === 0){
     return(
@@ -55,7 +55,7 @@ const Cart = () => {
           <div className="order-total--subdata">
              <div>
               <p>SubTotal:</p>
-              <p><FormatPrice price={total_amount}/></p>
+              <p><FormatPrice price={total_price}/></p>
              </div>
              <div>
               <p>Shipping Fee:</p>
@@ -64,7 +64,7 @@ const Cart = () => {
              <hr/>
              <div>
               <p>Total Amount:</p>
-              <p><FormatPrice price={shipping_fee + total_amount}/></p>
+              <p><FormatPrice price={shipping_fee + total_price}/></p>
              </div>
           </div>
         </div>
@@ -72,6 +72,8 @@ const Cart = () => {
     </div>
   </Wrapper>
 }
+
+
 const EmptyData = styled.div
 `
 display : grid;
