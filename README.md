@@ -1,12 +1,14 @@
-## 🚀 React E-Commerce Store
+## 🛒 SasmalStore | Full-Stack E-Commerce Platform
 
-A clean, responsive online store built with React. Browse products, manage your cart, and complete checkout—all in one place.
+A robust MERN-stack e-commerce application featuring dynamic product management, advanced
+filtering, and secure user authentication. This project is not just a storefront; it is a demonstration of solving real-world configuration and data integration challenges.
 
 ---
 
 ## 🔗 Live Demo
 
-https://react-ecommerce-project-manaswini-sasmals-projects.vercel.app/
+- https://react-ecommerce-project-manaswini-sasmals-projects.vercel.app/
+- Backend API: Hosted on Render
 
 ---
 
@@ -24,47 +26,25 @@ https://react-ecommerce-project-manaswini-sasmals-projects.vercel.app/
 - **Checkout Flow**  
   Review order, enter shipping details, and simulate payment.
 
-- **Responsive Design**  
-  Works smoothly on desktop, tablet, and mobile.
-
+- Secure Checkout: Protected routes powered by Auth0 to ensure user data privacy.
+- Dynamic Data: Products are fetched in real-time from a MongoDB collection.
+  
  ---
  
 
 ## 🛠️ Tech Stack
-
+- Frontend: React.js, Styled Components, Context API
 - **React** (with Hooks & Context API)  
 - **React Router** for page navigation  
-- **CSS Modules** (or Tailwind CSS) for styling  
+- **CSS Modules** (or Tailwind CSS) for styling
+- Backend: Node.js, Express.js
+- Database: MongoDB Atlas
+- Auth: Auth0 (Secure Identity Management
 - **Local Storage** for cart persistence  
 - **Vercel** for deployment
 
 ---
 
-**Install dependencies**
-
-npm install
-
-**Start the development server**
-
-npm start
-
-**Build for production**
-
-npm run build
-
----
-
-## 🖼️ Screenshots
-Home Page
-![image](https://github.com/user-attachments/assets/4ce9667f-ac0c-44a5-81e8-50cdf7a8e302)
-Product Page
-![image](https://github.com/user-attachments/assets/d548ccf6-fc28-4728-9734-37c2691fd3d7)
-Contact Page
-![image](https://github.com/user-attachments/assets/b2928f62-daea-4f6d-840e-782cb9eb50d1)
-Cart Page
-![image](https://github.com/user-attachments/assets/41e9c2b5-1d89-493e-95ff-152e6cc71088)
-
----
 
 🙋‍♀️ Author
 
