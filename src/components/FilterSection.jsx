@@ -92,7 +92,7 @@ const FilterSection = () => {
       <div className="filter-colors colors">
         <h3>Colors</h3>
         <div className="filter-color-style">
-          {colorsData.map((curColor, index) => {
+          {colorsData.slice(0, 5).map((curColor, index) => {
             if (curColor === "all") {
               return (
                 <button
@@ -205,6 +205,7 @@ h3{
   text-transform: capitalize;
   border:none;
   cursor:pointer;
+ 
 }
 .btnStyle{
  height: 2rem;
