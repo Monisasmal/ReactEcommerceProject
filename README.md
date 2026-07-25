@@ -46,9 +46,7 @@ filtering, and secure user authentication. This project is not just a storefront
 ---
 
 
-🙋‍♀️ Author
-
-## Manaswini Sasmal
+## 🙋‍♀️ Author - Manaswini Sasmal
 
 👩‍💻 Frontend Developer | React Enthusiast
 
